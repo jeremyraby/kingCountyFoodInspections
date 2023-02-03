@@ -21,3 +21,36 @@ SELECT ROUND((16154.0 / 252543.0) * 100.0, 2) AS 'handwashing violation percenta
 -- each numbe had to be written as a decimal in order to actually calculate
 
 --6.4
+
+-- Which 5 restaurants had the lowest inspection score in 2022?
+SELECT
+    DISTINCT name
+FROM reports
+WHERE 
+    inspection_date LIKE '%2022%'
+ORDER BY inspection_score DESC
+LIMIT 5;
+/*
+FORTUNE SEAFOOD RESTAURANT
+MOMO'S KEBAB KC209
+ROCK WOOD FIRED PIZZA
+THAAL GRAND INDIAN PLATTER
+BURBS BURGER- GEORGETOWN
+*/
+
+-- Which 5 restaurants had the highest inspection score?
+SELECT
+    DISTINCT name
+FROM reports
+WHERE 
+    inspection_date LIKE '%2022%'
+ORDER BY inspection_score
+LIMIT 5;
+/*
+MENUDERIA MARIA
++MAS CAFE
+100 LB CLAM
+100TH AVE CAKES
+101 GROCERY
+*/
+
