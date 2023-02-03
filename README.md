@@ -15,3 +15,12 @@ Restaurants are given scores from 0-400 points based on number of violations and
 #### Types of violations
 
 Red violations carry the most risk for food borne illness and are often called "critical"; an example of a "red" violation would be food left in the "danger zone" between 41F and 135F for more than 4 hours. Blue violations can be thought of as a general cleanliness or facility maintenance issue. Dirty floors or shelving or torn refigerator door gaskets are possible "blue" violations.
+
+#### Immediate closure
+
+> High score on the routine inspection*
+> Sewage backing up in kitchen and/or bathroom
+> No hot water/running water
+> Electricity goes out
+> Other imminent health hazards: broken refrigeration, damage caused by accidents or natural disasters, or when > establishment is linked to a food borne illness outbreak
+> Other: No permit to be operating (The permit assures that they have met all of the structural & equipment > requirements for the menu items they are going to serve); the owner/manager interferes with the inspector's > ability to do her/his duties.
