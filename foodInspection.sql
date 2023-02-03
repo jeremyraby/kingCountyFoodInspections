@@ -54,3 +54,14 @@ MENUDERIA MARIA
 101 GROCERY
 */
 
+-- Which zip code has the worst average score?
+SELECT
+    zip_code,
+    AVG(inspection_score)
+FROM reports
+GROUP BY 1
+ORDER BY 2 DESC
+LIMIT 1;
+-- (ZIP) 98104	(AVG SCORE) 22.45894935514313
+
+
