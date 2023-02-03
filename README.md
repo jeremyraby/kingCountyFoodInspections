@@ -9,7 +9,7 @@ This a collection of SQL queries exploring King County, Washington's restaurant 
 
 ### Scoring
 
-Restaurants are given scores from 0-400 points based on number of violations and how risky those violations are.
+Restaurants are given scores from [0-400 points](https://kingcounty.gov/depts/health/environmental-health/food-safety/inspection-system/closure-decision.aspx) based on number of violations and how risky those violations are.
 > The violations are added up between red and blue violations. If the total red critical violations is 90 or more, or the total of red and blue is 120 or more, then the establishment will be closed.
 
 #### Types of violations
