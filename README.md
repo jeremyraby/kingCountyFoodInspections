@@ -14,7 +14,7 @@ Restaurants are given scores from [0-400 points](https://kingcounty.gov/depts/he
 
 #### Types of violations
 
-Red violations carry the most risk for food borne illness and are often called "critical"; an example of a "red" violation would be food left in the "danger zone" between 41F and 135F for more than 4 hours. Blue violations can be thought of as a general cleanliness or facility maintenance issue. Dirty floors or shelving or torn refigerator door gaskets are possible "blue" violations.
+Red violations carry the most risk for food borne illness and are often called "critical"; an example of a "red" violation would be food left in the "danger zone" between 41F and 135F for more than 4 hours. Blue violations can be thought of as a general cleanliness or facility maintenance issue. Dirty floors or shelving or torn refigerator door gaskets are possible "blue" violations. Red violations are assigned values of 5-25 points while blue violations have values between 2-5 points. An example inspection report can be viewed [here](https://github.com/jeremyraby/kingCountyFoodInspections/blob/main/sample-food-inspection-form.pdf).
 
 #### Immediate closure
 
