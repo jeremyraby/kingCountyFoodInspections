@@ -64,4 +64,14 @@ ORDER BY 2 DESC
 LIMIT 1;
 -- (ZIP) 98104	(AVG SCORE) 22.45894935514313
 
+-- Which city has the worst average score?
+SELECT
+    city,
+    AVG(inspection_score)
+FROM reports
+GROUP BY 1
+ORDER BY 2 DESC
+LIMIT 1;
+-- (City) Burien  (AVG score) 30.88888888888889
+
 
