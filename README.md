@@ -1,6 +1,6 @@
 # README
 
-## About 
+## About
 
 This a collection of SQL queries exploring King County, Washington's restaurant inspection data published on [data.gov](https://catalog.data.gov/dataset/food-establishment-inspection-data).
 > "This dataset was last updated on 01/25/2023 and is current from 1/1/2006 to 01/21/2023."
@@ -15,6 +15,13 @@ Restaurants are given scores from [0-400 points](https://kingcounty.gov/depts/he
 #### Types of violations
 
 Red violations carry the most risk for food borne illness and are often called "critical"; an example of a "red" violation would be food left in the "danger zone" between 41F and 135F for more than 4 hours. Blue violations can be thought of as a general cleanliness or facility maintenance issue. Dirty floors or shelving or torn refigerator door gaskets are possible "blue" violations. Red violations are assigned values of 5-25 points while blue violations have values between 2-5 points. An example inspection report can be viewed [here](https://github.com/jeremyraby/kingCountyFoodInspections/blob/main/sample-food-inspection-form.pdf).
+
+[Inspections are also rated as "satisfactory" or "unsatisfactory" based on their violations](https://info.kingcounty.gov/health/ehs/foodsafety/inspections/Results.aspx?Output=W&Business_Name=monsoon&Business_Address=&Longitude=&Latitude=&City=seattle&Zip_Code=&Inspection_Type=All&Inspection_Start=&Inspection_End=&Inspection_Closed_Business=A&Violation_Points=&Violation_Red_Points=&Violation_Descr=&Fuzzy_Search=N&Sort=B).
+
+> One red critical violation equals an unsatisfactory inspection
+> 35 or more red critical violation points require a reinspection witin 14 days.
+> 90 or more red critical violation points require the establishment be closed.
+> 120 or more total (red & blue) points also requires the establishment be closed.
 
 #### Immediate closure
 
