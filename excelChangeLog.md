@@ -5,3 +5,4 @@
 - create column for violation number category using LEFT()
 - remove violation numbers from violation descriptions using REPLACE()
 - find all cells with errors using conditional formatting
+- google the address for the facilities with errors in the name column and correct those cells
