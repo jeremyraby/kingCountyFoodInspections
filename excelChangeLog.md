@@ -4,3 +4,4 @@
 - removed spaces between strings inside field names, replaced with underscores, using find & replace
 - create column for violation number category using LEFT()
 - remove violation numbers from violation descriptions using REPLACE()
+- find all cells with errors using conditional formatting
