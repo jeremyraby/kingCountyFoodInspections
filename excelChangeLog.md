@@ -6,3 +6,4 @@
 - remove violation numbers from violation descriptions using REPLACE()
 - find all cells with errors using conditional formatting
 - google the address for the facilities with errors in the name column and correct those cells
+- using =RIGHT(), break out the roman numeral risk category (I, II, III) into a separate column called "risk"
