@@ -33,3 +33,5 @@ Red violations carry the most risk for food borne illness and are often called "
 > Other: No permit to be operating (The permit assures that they have met all of the structural & equipment > requirements for the menu items they are going to serve); the owner/manager interferes with the inspector's > ability to do her/his duties.
 
 King County Food Protection number: 206-263-9566
+
+Don't have information on who conducted the inspections
