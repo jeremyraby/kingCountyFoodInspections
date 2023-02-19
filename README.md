@@ -35,3 +35,11 @@ Red violations carry the most risk for food borne illness and are often called "
 King County Food Protection number: 206-263-9566
 
 Don't have information on who conducted the inspections
+
+### Risk
+
+Facilities are assessed a risk level based on the increasing potential for risk factors within the majority of the facility's preparation processes. 
+
+> Level 1 risk doesn't include food prep and is only dealing with ready-to-eat food, eg groceries in a Dollar General
+> Level 2 risk involves food prep and is typically a cook-and-serve operation such as most fast food restaurants.
+> Level 3 risk involves multiple trips through the "temperature danger zone" between 41F and 135F for cooking, cooling, and reheating the food. BBQ and buffets are the usual suspects, but would also include "special processes" such as sous vide or sushi.
