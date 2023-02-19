@@ -38,7 +38,7 @@ Don't have information on who conducted the inspections
 
 ### Risk
 
-Facilities are assessed a risk level based on the increasing potential for risk factors within the majority of the facility's preparation processes. 
+Facilities are assessed a risk level based on the increasing potential for risk factors within the majority of the facility's preparation processes.
 
 > Level 1 risk doesn't include food prep and is only dealing with ready-to-eat food, eg groceries in a Dollar General
 > Level 2 risk involves food prep and is typically a cook-and-serve operation such as most fast food restaurants.
