@@ -9,4 +9,3 @@
 - using =RIGHT(), break out the roman numeral risk category (I, II, III) into a separate column called "risk"
 - use =PROPER() to make city names consistent
 - 1600+ rows hadn't had their violations entered properly (or weren't exported properly to the csv), so I filtered by violation_description to only show certain mistakes and manually corrected one of them then used the fill handle to copy down the columns. Corrections were made by comparing against the sample food inspection form.
-
