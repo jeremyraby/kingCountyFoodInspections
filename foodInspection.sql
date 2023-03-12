@@ -1,8 +1,8 @@
--- What is the average inspection score for restaurants that were closed because of their performance?
-SELECT
-    ROUND(AVG(inspection_score), 2)
+-- What is the average inspection score for restaurants that were closed because of their 
+-- performance?
+SELECT AVG(inspection_score)
 FROM reports
-WHERE inspection_closed_business = 'true';
+WHERE inspection_closed_business LIKE 'true';
 -- 95.88
 
 -- What percentage of inspections found handwashing violations?
@@ -74,4 +74,28 @@ ORDER BY 2 DESC
 LIMIT 1;
 -- (City) Burien  (AVG score) 30.88888888888889
 
+-- Which restaurant has the worst average score?
+SELECT
+    name,
+    AVG(inspection_score)
+FROM reports
+GROUP BY 1
+ORDER BY 2 DESC
+LIMIT 1;
+-- (Restaurant) TASTY SZECHUAN	(AVG score) 84.3913043478261
 
+/*
+Per Josh:
+  - Care more about what is the san doing on inspections vs what violations are observed -> no info
+  - what are the most common violations
+  - are vios correlated to fbi
+  - which vios are sans writing most/least -> no info
+  - which facilities have the most/least violations (spilling ink or being Randy)
+  - finish not inspected? -> use zip code or city as proxy for list
+  - get numbers? -> use zip code or city as proxy for list
+  - was a follow up performed within 2 weeks? 
+  - was the same violation written consecutively?
+  - quarterly progress report (2022) broken down by qtr on y axis, 
+  risk on x axis, % numbers done in qt1 of which risk category
+    - quarterly vs trimester for High 3s vs High 4s
+*/
