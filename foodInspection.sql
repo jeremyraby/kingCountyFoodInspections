@@ -184,18 +184,3 @@ violation_num, violation_type, COUNT(violation_num)
 1720, RED, 2
 2900, BLUE, 2
 */
-/*
-Per Josh:
-  - Care more about what is the san doing on inspections vs what violations are observed -> no info
-  - what are the most common violations
-  - are vios correlated to fbi
-  - which vios are sans writing most/least -> no info
-  - which facilities have the most/least violations (spilling ink or being Randy)
-  - finish not inspected? -> use zip code or city as proxy for list
-  - get numbers? -> use zip code or city as proxy for list
-  - was a follow up performed within 2 weeks? 
-  - was the same violation written consecutively?
-  - quarterly progress report (2022) broken down by qtr on y axis, 
-  risk on x axis, % numbers done in qt1 of which risk category
-    - quarterly vs trimester for High 3s vs High 4s
-*/
