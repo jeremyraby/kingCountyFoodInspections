@@ -128,6 +128,24 @@ SELECT ROUND(((144.0-316)/316) * 100, 2);
 -- -54.43%
 -- "Red" violations in zip code 98105 decreased by 54.43% between 2017 & 2019
 
+-- What is the average inspection score for each risk category?
+SELECT
+    risk,
+    ROUND(AVG(inspection_score), 0)
+FROM reports
+WHERE 
+    inspection_score != '' AND
+    risk != '' AND
+    inspection_closed_business = 'TRUE'
+GROUP BY risk;
+
+/*
+risk, ROUND(AVG(inspection_score), 0)
+I, 29
+II, 32
+III, 100
+*/
+
 -- Which are the 10 violations sans are writing most/least?
 -- use zip code as proxy
 -- are these vios being written properly?
@@ -183,4 +201,65 @@ violation_num, violation_type, COUNT(violation_num)
 1500, RED, 2
 1720, RED, 2
 2900, BLUE, 2
+*/
+
+-- Which are the 10 "red" violations sans are writing most/least?
+-- use zip code as proxy
+-- are these vios being written properly?
+
+-- MOST
+SELECT 
+   violation_num, 
+   violation_description,
+   COUNT(violation_num)
+FROM reports
+WHERE 
+    inspection_date LIKE '%/19' AND
+    zip_code = '98105' AND
+    violation_num != '' AND
+    violation_type = 'RED'
+GROUP BY 1
+ORDER BY 3 DESC
+LIMIT 10;
+/*
+violation_num, violation_description, COUNT(violation_num)
+2110, Proper cold holding temperatures (greater than  45 degrees F), 26
+600, Adequate handwashing facilities, 20
+200, Food Worker Cards current for all food workers; new food workers trained, 17
+1400, Raw meats below and away from ready to eat food; species separated, 16
+2200, Accurate thermometer provided and used ..., 14
+2120, Proper cold holding temperatures ( 42 degrees F to 45 degrees F), 10
+1900, No room temperature storage; proper use of time..., 9
+1600, Proper cooling procedure, 9
+2500, Toxic substances properly identified,..., 7
+900, Proper washing of fruits and vegetables, 3
+*/
+
+-- LEAST
+SELECT 
+   violation_num,, 
+   violation_description,
+   COUNT(violation_num)
+FROM reports
+WHERE 
+    inspection_date LIKE '%/19' AND
+    zip_code = '98105' AND
+    violation_num != '' AND
+    violation_type = 'RED'
+GROUP BY 1
+ORDER BY 3
+LIMIT 10;
+
+/*
+violation_num, violation_description, COUNT(violation_num)
+1000, Food in good condition, safe and unadulterated; approved additives, 1
+1710, Proper hot holding temperatures (less than130 degrees), 1
+2300, Proper Consumer Advisory posted for raw ..., 1
+2600, Compliance with risk control plans, variances, plan of operation; valid permit; appr procedur, 1
+1500, Proper handling of pooled eggs, 2
+1720, Proper hot holding temperatures; between 130 degrees F to 134 degrees F, 2
+400, Hands washed as required, 2
+1300, Food contact surfaces and utensils used for raw meat thoroughly cleaned and sanitized.  no .., 3
+900, Proper washing of fruits and vegetables, 3
+2500, Toxic substances properly identified,..., 7
 */
