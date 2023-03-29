@@ -22,20 +22,22 @@ SELECT ROUND((16154.0 / 252543.0) * 100.0, 2) AS 'handwashing violation percenta
 
 --6.4
 
--- Which 5 restaurants had the lowest inspection score in 2022?
+-- Which 5 restaurants had the worst inspection score in 2022?
 SELECT
-    DISTINCT name
+    DISTINCT name,
+    inspection_score
 FROM reports
 WHERE 
-    inspection_date LIKE '%2022%'
+    inspection_date LIKE '%/22%'
 ORDER BY inspection_score DESC
 LIMIT 5;
 /*
-FORTUNE SEAFOOD RESTAURANT
-MOMO'S KEBAB KC209
-ROCK WOOD FIRED PIZZA
-THAAL GRAND INDIAN PLATTER
-BURBS BURGER- GEORGETOWN
+name, inspection_score
+FORTUNE SEAFOOD RESTAURANT, 96
+QIN XI'AN NOODLES, 5
+WEDGWOOD ALE HOUSE & CAFE, 95
+BANGKOK BASIL, 93
+FANG LLC DBA MIKE'S NOODLE HOUSE, 93
 */
 
 -- Which 5 restaurants had the highest inspection score?
@@ -237,7 +239,7 @@ violation_num, violation_description, COUNT(violation_num)
 
 -- LEAST
 SELECT 
-   violation_num,, 
+   violation_num, 
    violation_description,
    COUNT(violation_num)
 FROM reports
